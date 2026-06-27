@@ -9,13 +9,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:         #0A0F1C;
-  --bg2:        #0F172A;
-  --bg3:        #1A2236;
+  --bg:         #FFFFFF;
+  --bg2:        #F8FAFC;
+  --bg3:        #F1F5F9;
   --card:       #FFFFFF;
   --card2:      #F8FAFC;
-  --text-head:  #FFFFFF;
-  --text-body:  #CBD5E1;
+  --text-head:  #0F172A;
+  --text-body:  #334155;
   --text-soft:  #64748B;
   --border:     rgba(255,255,255,0.08);
   --border-lt:  #E2E8F0;
@@ -41,7 +41,7 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; justify-content: space-between; align-items: center;
   padding: 0 6vw; height: 64px;
-  background: rgba(10,15,28,0.9);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -406,7 +406,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#projects">Enterprise Product Experience</a></li>
     <li><a href="#ai">AI Tools</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -438,7 +438,7 @@ footer {
       <div class="stat-label">Companies</div>
     </div>
     <div>
-      <div class="stat-num">15<sup>+</sup></div>
+      <div class="stat-num">25<sup>+</sup></div>
       <div class="stat-label">Technologies</div>
     </div>
   </div>
@@ -453,11 +453,12 @@ footer {
       <td class="sk-label">Backend</td>
       <td>
         <div class="sk-pills">
-          <span class="pill hi">Java 21</span>
-          <span class="pill hi">Spring Boot</span>
+          <span class="pill hi">Java 17/21</span>
+          <span class="pill hi">Spring Boot 3.x</span>
           <span class="pill hi">Microservices</span>
           <span class="pill">Spring Security</span>
           <span class="pill">Spring Cloud</span>
+          <span class="pill">Spring Cloud OpenFeign</span>
           <span class="pill">Hibernate</span>
           <span class="pill">MyBatis</span>
           <span class="pill">Struts 2</span>
@@ -471,9 +472,10 @@ footer {
       <td class="sk-label">Frontend</td>
       <td>
         <div class="sk-pills">
-          <span class="pill hi">Angular</span>
+          <span class="pill hi">Angular 18</span>
           <span class="pill hi">JavaScript</span>
           <span class="pill">TypeScript</span>
+          <span class="pill">Bootstrap</span>
           <span class="pill">jQuery</span>
           <span class="pill">Sencha JS</span>
           <span class="pill">HTML5</span>
@@ -498,9 +500,12 @@ footer {
       <td>
         <div class="sk-pills">
           <span class="pill hi">AWS</span>
-          <span class="pill hi">Microsoft Azure</span>
+          <span class="pill hi">AWS EC2</span>
           <span class="pill">AKS</span>
-          <span class="pill">Azure DB for PostgreSQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Podman</span>
+          <span class="pill">Quay</span>
+          <span class="pill">APIGEE</span>
         </div>
       </td>
     </tr>
@@ -511,12 +516,46 @@ footer {
           <span class="pill">Docker</span>
           <span class="pill">Kubernetes</span>
           <span class="pill">Jenkins</span>
+          <span class="pill">Bamboo</span>
           <span class="pill">Git</span>
           <span class="pill">GitLab</span>
           <span class="pill">Bitbucket</span>
-          <span class="pill">Bamboo</span>
+          <span class="pill">JFrog Artifactory</span>
           <span class="pill">Ant</span>
           <span class="pill">Tomcat 9</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="sk-label">Monitoring</td>
+      <td>
+        <div class="sk-pills">
+          <span class="pill">DataDog</span>
+          <span class="pill">Splunk</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="sk-label">Security</td>
+      <td>
+        <div class="sk-pills">
+          <span class="pill">OAuth 2.0</span>
+          <span class="pill">OKTA</span>
+          <span class="pill">SonarQube</span>
+          <span class="pill">Checkmarx</span>
+          <span class="pill">Prisma Cloud</span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="sk-label">Testing</td>
+      <td>
+        <div class="sk-pills">
+          <span class="pill">Jest</span>
+          <span class="pill">JUnit</span>
+          <span class="pill">Mockito</span>
+          <span class="pill">Jacoco</span>
+          <span class="pill">Selenium</span>
         </div>
       </td>
     </tr>
@@ -526,7 +565,6 @@ footer {
         <div class="sk-pills">
           <span class="pill hi">Agile / Scrum</span>
           <span class="pill hi">CI/CD</span>
-          <span class="pill">SonarQube</span>
           <span class="pill">Design Patterns</span>
           <span class="pill">Code Reviews</span>
           <span class="pill">Mentoring</span>
@@ -549,11 +587,14 @@ footer {
       <div class="tl-company">Status Neo</div>
       <div class="tl-client">Client: Carelon Global Solutions</div>
       <ul class="tl-bullets">
-        <li>Architecting and delivering full stack features for Carelon's healthcare platform, improving API response time by ~30% through microservices decomposition and caching strategies</li>
-        <li>Integrated GitHub Copilot and Claude AI into team workflows, cutting boilerplate coding time by ~40% and improving PR review turnaround</li>
-        <li>Led POC initiatives evaluating 3+ emerging cloud technologies, directly influencing architectural decisions for production systems</li>
-        <li>Mentoring 4 junior developers through weekly code reviews and pair programming, reducing bug escape rate to QA by 25%</li>
-        <li>Collaborating cross-functionally with product, QA, and design teams to consistently deliver features on schedule</li>
+        <li>Working as a Senior Full Stack Engineer on RxCAB (BC Wrapper) — Carelon's enterprise pharmacy benefit configuration platform used by pharmacy service coordinators to manage national account health insurance clients across all 50 US states</li>
+        <li>Developed Angular 18 front-end features for the Client Configuration module — building screens for group name, group number, medical system, contract codes, and employee group setup for national account clients</li>
+        <li>Built front-end workflows for Shell Benefit creation, CBM (Client Benefit Mapping), and multi-product plan support including PPO, HMO, HSA, HRE, and CDHP benefit types</li>
+        <li>Developed the Implementation Grid feature — generating client benefit summaries, handling document approval flows, and uploading signed-off records back to the Client Benefit Association</li>
+        <li>Built Java 17 / Spring Boot 3.x REST API services and integrated with Benefit Builder and Benefit Center APIs using Spring Cloud OpenFeign for benefit plan retrieval</li>
+        <li>Developed and deployed microservices on AWS EC2 with Podman containerisation, routed through APIGEE API Gateway, backed by Azure Database for PostgreSQL</li>
+        <li>Wrote unit tests using JUnit, Mockito, and Jest; worked with SonarQube and Checkmarx for code quality; used DataDog and Splunk for monitoring and log analysis</li>
+        <li>Used GitHub Copilot and Claude AI to improve development speed; participated in code reviews and mentored junior team members as part of the Agile delivery process</li>
       </ul>
     </div>
 
@@ -583,7 +624,7 @@ footer {
 
     <div class="tl-item reveal">
       <div class="tl-date">Feb 2019 – May 2022</div>
-      <div class="tl-role">Senior Full Stack Developer</div>
+      <div class="tl-role">Senior Full Stack Engineer</div>
       <div class="tl-company">JAMOCHA Tech Pvt Ltd</div>
       <ul class="tl-bullets">
         <li>Delivered 5+ client projects end-to-end across the full SDLC, consistently on time and within budget</li>
@@ -632,8 +673,50 @@ footer {
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-label">Work</div>
-  <h2>Featured <em>Projects</em></h2>
+  <h2>Featured <em>Enterprise Product Experience</em></h2>
   <div class="proj-timeline">
+
+    <div class="proj-item reveal">
+      <div class="proj-year">2025</div>
+      <div class="proj-card">
+        <div>
+          <div class="proj-company">Status Neo / Carelon Global Solutions · Dec 2025 – Present</div>
+          <div class="proj-name">RxCAB (BC Wrapper) — Pharmacy Benefit Configuration Platform</div>
+          <div class="proj-role">Senior Consultant / Full Stack Developer</div>
+        </div>
+        <div class="proj-desc">
+          RxCAB (formerly BC Wrapper) is an enterprise pharmacy benefit configuration platform used by pharmacy service coordinators at Carelon (an Elevance Health subsidiary) to manage national account clients — large organisations with employees across all 50 US states. The platform handles the full benefit lifecycle: client setup, shell benefit creation, Client Benefit Mapping (CBM), implementation grid management, and integration with Benefit Builder and the new Benefit Center system for plan ID retrieval across PPO, HMO, HSA, and CDHP products.
+        </div>
+        <ul class="proj-highlights">
+          <li>Developing Angular 18 front-end modules for client configuration, benefit setup workflows, and CBM — enabling pharmacy service coordinators to configure individual benefit fields and parameters per national account client</li>
+          <li>Building Java 17 / Spring Boot 3.x microservices with Spring Cloud OpenFeign for inter-service communication across the distributed benefit configuration pipeline</li>
+          <li>Integrating with Benefit Builder and Benefit Center APIs to fetch benefit plan IDs based on market segment, medical system, product type, and formulary parameters</li>
+          <li>Implementing implementation grid workflows — generating Excel-based benefit summaries, managing client approval cycles, and uploading signed-off documents back to the Client Benefit Association</li>
+          <li>Working with AWS EC2, Podman, APIGEE API Gateway, Bitbucket, and Bamboo CI/CD pipelines in a secure enterprise cloud environment</li>
+          <li>Leveraging DataDog and Splunk for monitoring and log analysis; applying OAuth 2.0 / OKTA for authentication and SonarQube / Checkmarx for code quality and security compliance</li>
+        </ul>
+        <div class="proj-stack">
+          <span class="proj-tag">Java 17</span>
+          <span class="proj-tag">Spring Boot 3.x</span>
+          <span class="proj-tag">Spring Cloud OpenFeign</span>
+          <span class="proj-tag">Angular 18</span>
+          <span class="proj-tag">Bootstrap</span>
+          <span class="proj-tag">REST APIs</span>
+          <span class="proj-tag">AWS EC2</span>
+          <span class="proj-tag">PostgreSQL</span>
+          <span class="proj-tag">APIGEE</span>
+          <span class="proj-tag">Podman</span>
+          <span class="proj-tag">Bamboo</span>
+          <span class="proj-tag">Bitbucket</span>
+          <span class="proj-tag">DataDog</span>
+          <span class="proj-tag">Splunk</span>
+          <span class="proj-tag">OAuth 2.0 / OKTA</span>
+          <span class="proj-tag">SonarQube</span>
+          <span class="proj-tag">JUnit</span>
+          <span class="proj-tag">Jest</span>
+        </div>
+      </div>
+    </div>
 
     <div class="proj-item reveal">
       <div class="proj-year">2025</div>
@@ -798,5 +881,9 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
+
+<section id="expertise"><h2>Core Expertise</h2><p>Enterprise Product Development • Java • Spring Boot • Angular • Microservices • REST APIs • AWS EC2 • Amazon S3 • CI/CD • Performance Optimization • Agile</p></section>
+<section id="domains"><h2>Industry Experience</h2><p>Healthcare • Banking & Wealth Management • Workforce Analytics • Enterprise Content Management • AI-powered Document Processing</p></section>
+
 </body>
 </html>
